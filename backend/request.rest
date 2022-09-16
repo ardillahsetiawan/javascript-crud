@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+
+
+###
+GET http://localhost:5000/users/1
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Ardillah Setiawan",
+    "email": "ardisetiawan1305@gmail.com",
+    "gender": "Male"
+}
+
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "udin",
+    "email": "udinsedunia@gmail.com",
+    "gender": "Male"
+}
+
+
+### 
+DELETE http://localhost:5000/users/2
